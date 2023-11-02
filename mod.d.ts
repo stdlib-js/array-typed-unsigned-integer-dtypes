@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,25 +16,24 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { UnsignedIntegerDataType as DataType } from '@stdlib/types/array';
 
 /**
-* Return a list of typed array unsigned integer data types.
+* Returns a list of typed array unsigned integer data types.
 *
-* @module @stdlib/array-typed-unsigned-integer-dtypes
+* @returns list of typed array unsigned integer data types
 *
 * @example
-* var dtypes = require( '@stdlib/array-typed-unsigned-integer-dtypes' );
-*
 * var list = dtypes();
 * // e.g., returns [ 'uint16', 'uint32', 'uint8', 'uint8c' ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function dtypes(): Array<DataType>;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = dtypes;
